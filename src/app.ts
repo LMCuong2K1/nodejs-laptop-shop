@@ -1,8 +1,23 @@
 // const express = require('express');
 import express from 'express';
+import 'dotenv/config';
+import webRoutes from '../src/routes/web';
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
+//config views 
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
+//config web routes
+webRoutes(app);
+
+
+//config static file
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+    res.render('home.ejs');
+})
 app.listen(port, () => {
     console.log("My app running on port: ", port);
 })
