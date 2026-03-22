@@ -19,30 +19,14 @@
     "typescript": "5.7.3"
   },
   "dependencies": {
-<<<<<<< HEAD
     "dotenv": "17.3.1",
     "ejs": "3.1.10",
-=======
-    "dotenv": "16.4.7",
->>>>>>> a3f25675cc0592cb29840dec1d0bac02356002cc
     "express": "5.0.1"
   },
-  "nodemonConfig": {
-    "watch": [
-      "src"
-    ],
-    "ext": "ts",
-    "ignore": [
-      "node_modules"
-    ],
-    "exec": "ts-node ./src/app.ts"
-  },
+
   "scripts": {
     "build": "tsc",
-<<<<<<< HEAD
-    "start": "nodemon dist/app.js"
-=======
-    "start": "nodemon"
->>>>>>> a3f25675cc0592cb29840dec1d0bac02356002cc
+    "start": "node dist/app.js",
+    "dev": "nodemon"
   }
 }
