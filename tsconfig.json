@@ -7,6 +7,39 @@
     "strict": true,
     "skipLibCheck": true,
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "app/*": [
+        "./src/app/*"
+      ],
+      "config/*": [
+        "./src/config/*"
+      ],
+      "controllers/*": [
+        "./src/controllers/*"
+      ],
+      "services/*": [
+        "./src/services/*"
+      ],
+      "models/*": [
+        "./src/models/*"
+      ],
+      "routes/*": [
+        "./src/routes/*"
+      ],
+      "environment/*": [
+        "./environments/*"
+      ],
+      "shared/*": [
+        "./src/app/_shared/*"
+      ],
+      "helpers/*": [
+        "./src/helpers/*"
+      ],
+      "tests/*": [
+        "./src/tests/*"
+      ]
+    }
   }
 }
