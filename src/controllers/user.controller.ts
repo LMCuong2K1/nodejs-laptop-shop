@@ -16,7 +16,7 @@ const postCreateUser = async (req: Request, res: Response) => {
         console.log(error);
         res.status(500).send("Đã có lỗi xảy ra khi tạo người dùng.");
     }
-}
+};
 
 export {
     getHomePage, getCreateUserPage, postCreateUser
